@@ -1,27 +1,22 @@
 import 'package:flutter/material.dart';
 
-import 'modul_01/profile_screen.dart';
+import 'screens/task_list_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Modul05App extends StatelessWidget {
+  const Modul05App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Profil Mahasiswa',
       debugShowCheckedModeBanner: false,
+      title: 'Modul 05 - Local Storage',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFF0284C7),
         ),
-        scaffoldBackgroundColor: const Color(0xFFF8FAFC),
         useMaterial3: true,
       ),
-      home: const ProfileScreen(),
+      home: const TaskListScreen(),
     );
   }
 }
